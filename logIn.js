@@ -6,7 +6,6 @@ var knex = require('knex')({
       password: 'navgurukul',
       database: 'authentication'
     },
-    pool: { min: 0, max: 7 }
   })
 knex.schema.createTable('login', (table) => {
     table.increments('id')
